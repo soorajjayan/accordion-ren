@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5.2.3</title>
+
+    <!-- Bootstrap 5.2.3 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <style>
+      .card-header {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .arrow {
+        transition: transform 0.3s ease-in-out;
+      }
+      .acc-head {
+        font-size: 20px;
+      }
+      .card {
+        margin-top: 20px;
+        /* background-color: white; */
+        border: 1px solid #fd5c63;
+      }
+      .card-header.collapsed {
+        background-color: white !important;
+      }
+      .card-header {
+        background-color: #343434;
+      }
+      .card-header.collapsed h2 {
+        color: black !important;
+      }
+      .card-header h2 {
+        color: white;
+      }
+      .accordion-button:not(.collapsed) {
+        background-color: #343434;
+        box-shadow: none;
+        color: white;
+        border: none;
+      }
+      .accordion-item {
+        margin-top: 20px;
+        border: 1px solid #fd5c63;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <!-- Unified Accordion -->
+      <div class="accordion" id="mainAccordion">
+        <div class="row">
+          <!-- Section 1 (Left Side) -->
+          <div class="col-md-6">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingLeft1">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseLeft1"
+                  aria-expanded="true"
+                  aria-controls="collapseLeft1"
+                >
+                  Who is ADHI Schools?
+                </button>
+              </h2>
+              <div
+                id="collapseLeft1"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingLeft1"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  Celebrating over 20 years in California real estate education, ADHI Schools is a premier choice in
+                  California. Each year we conduct hundreds of real estate lectures and help thousands of current and
+                  aspiring real estate professionals obtain and renew their licenses easily and quickly.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingLeft2">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseLeft2"
+                  aria-expanded="false"
+                  aria-controls="collapseLeft2"
+                >
+                  Why choose ADHI Schools?
+                </button>
+              </h2>
+              <div
+                id="collapseLeft2"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingLeft2"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  <p
+                    style="
+                      color: black !important;
+                      font-size: 17px !important;
+                      font-weight: normal !important;
+                      text-align: justify !important;
+                    "
+                  >
+                    We offer:
+                  </p>
+
+                  <ul style="list-style-type: disc !important">
+                    <li
+                      style="
+                        color: black !important;
+                        font-size: 17px !important;
+                        font-weight: normal !important;
+                        text-align: justify !important;
+                        display: list-item;
+                      "
+                    >
+                      An affordable price for our CE packages.
+                    </li>
+                    <li
+                      style="
+                        color: black !important;
+                        font-size: 17px !important;
+                        font-weight: normal !important;
+                        text-align: justify !important;
+                        display: list-item;
+                      "
+                    >
+                      Fast, user-friendly platform designed for self-paced learning.
+                    </li>
+                    <li
+                      style="
+                        color: black !important;
+                        font-size: 17px !important;
+                        font-weight: normal !important;
+                        text-align: justify !important;
+                        display: list-item;
+                      "
+                    >
+                      Unlimited free retakes on failed exams.
+                    </li>
+                    <li
+                      style="
+                        color: black !important;
+                        font-size: 17px !important;
+                        font-weight: normal !important;
+                        text-align: justify !important;
+                        display: list-item;
+                      "
+                    >
+                      DRE-approved courses focused exclusively on California real estate.
+                    </li>
+                    <li
+                      style="
+                        color: black !important;
+                        font-size: 17px !important;
+                        font-weight: normal !important;
+                        text-align: justify !important;
+                        display: list-item;
+                      "
+                    >
+                      Solid course materials to help prepare you for the exam.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingLeft3">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseLeft3"
+                  aria-expanded="false"
+                  aria-controls="collapseLeft3"
+                >
+                  Are your courses state-approved?
+                </button>
+              </h2>
+              <div
+                id="collapseLeft3"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingLeft3"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  All courses are reviewed and approved by the California Department of Real Estate (DRE). Our statutory
+                  sponsor number is S0348 and our CE sponsor number is 6404.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingLeft4">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseLeft4"
+                  aria-expanded="false"
+                  aria-controls="collapseLeft4"
+                >
+                  How much does the 45-hour package cost?
+                </button>
+              </h2>
+              <div
+                id="collapseLeft4"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingLeft4"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  The entire cost of the program, when purchased as a package is $99, including all materials and
+                  unlimited exam retakes for up to 1 year.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingLeft5">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseLeft5"
+                  aria-expanded="false"
+                  aria-controls="collapseLeft5"
+                >
+                  What payment methods do you accept?
+                </button>
+              </h2>
+              <div
+                id="collapseLeft5"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingLeft5"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  Credit/debit cards (Visa, Mastercard, American Express or Discover). We do not accept checks.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingLeft6">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseLeft6"
+                  aria-expanded="false"
+                  aria-controls="collapseLeft6"
+                >
+                  Can I get a refund?
+                </button>
+              </h2>
+              <div
+                id="collapseLeft6"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingLeft6"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">No. All course purchases are final.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingLeft7">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseLeft7"
+                  aria-expanded="false"
+                  aria-controls="collapseLeft7"
+                >
+                  How do the quizzes and finals work?
+                </button>
+              </h2>
+              <div
+                id="collapseLeft7"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingLeft7"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  Quizzes: A passing score of 70% is required on the quizzes to move on to the final exam. The quizzes
+                  are designed to prepare you for finals with detailed answer explanations. Finals: Must pass with 70%
+                  or higher. Two attempts (Original + Retake). You can use the books to pass the final exams.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingLeft8">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseLeft8"
+                  aria-expanded="false"
+                  aria-controls="collapseLeft8"
+                >
+                  What happens if I fail a final twice?
+                </button>
+              </h2>
+              <div
+                id="collapseLeft8"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingLeft8"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  If you don’t pass the final exam on your second attempt, you’ll need to retake all the quizzes for
+                  that course. After that, there’s a short waiting period (based on the course’s credit hours) before
+                  you can try the final exam again. For example, a 3-hour course requires a 3-hour wait. This gives you
+                  time to review the material and feel more prepared for your next attempt!
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingLeft9">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseLeft9"
+                  aria-expanded="false"
+                  aria-controls="collapseLeft9"
+                >
+                  Is there a limit to how many continuing education hours I can complete each day?
+                </button>
+              </h2>
+              <div
+                id="collapseLeft9"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingLeft9"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  Yes, there is! To follow state guidelines, you can complete a maximum of 15 continuing education hours
+                  within any 24-hour period. Our system takes care of this for you, so you can focus on completing your
+                  courses efficiently.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2 (Right Side) -->
+          <div class="col-md-6">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingRight1">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRight1"
+                  aria-expanded="false"
+                  aria-controls="collapseRight1"
+                >
+                  What are the current CE requirements?
+                </button>
+              </h2>
+              <div
+                id="collapseRight1"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingRight1"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  <p
+                    style="
+                      color: black !important;
+                      font-size: 17px !important;
+                      font-weight: normal !important;
+                      text-align: justify !important;
+                    "
+                  >
+                    Rest assured, our packages cover all necessary criteria. Here's a detailed outline:
+                  </p>
+
+                  <ol>
+                    <li
+                      style="
+                        color: black !important;
+                        font-size: 17px !important;
+                        font-weight: normal !important;
+                        text-align: justify !important;
+                      "
+                    >
+                      First-Time Salesperson Renewal:
+                    </li>
+                    <ul style="list-style-type: disc !important; padding-left: 60px !important">
+                      <li
+                        style="
+                          color: black !important;
+                          font-size: 17px !important;
+                          font-weight: normal !important;
+                          text-align: justify !important;
+                          display: list-item;
+                        "
+                      >
+                        Mandatory Core Courses (15 Hours):
+                      </li>
+                      <ul style="list-style-type: circle !important; padding-left: 60px !important">
+                        <li
+                          style="
+                            color: black !important;
+                            font-size: 17px !important;
+                            font-weight: normal !important;
+                            text-align: justify !important;
+                            display: list-item;
+                            padding-bottom: 20px !important;
+                          "
+                        >
+                          3 hours each in: Ethics, Agency, Trust Fund Handling, Risk Management, and Fair Housing (Fair
+                          Housing must include interactive role-playing).
+                        </li>
+                      </ul>
+                      <li
+                        style="
+                          color: black !important;
+                          font-size: 17px !important;
+                          font-weight: normal !important;
+                          text-align: justify !important;
+                          display: list-item;
+                        "
+                      >
+                        Implicit Bias Training (2 Hours): A dedicated 2-hour course.
+                      </li>
+                      <li
+                        style="
+                          color: black !important;
+                          font-size: 17px !important;
+                          font-weight: normal !important;
+                          text-align: justify !important;
+                          display: list-item;
+                        "
+                      >
+                        Consumer Protection (Minimum 18 Hours): At least 18 hours of courses focused on protecting
+                        consumers.
+                      </li>
+                      <li
+                        style="
+                          color: black !important;
+                          font-size: 17px !important;
+                          font-weight: normal !important;
+                          text-align: justify !important;
+                          display: list-item;
+                          padding-bottom: 20px !important;
+                        "
+                      >
+                        Elective Courses (Up to 10 Hours): The remaining hours can be in either consumer protection or
+                        consumer service topics.
+                      </li>
+                    </ul>
+
+                    <li
+                      style="
+                        color: black !important;
+                        font-size: 17px !important;
+                        font-weight: normal !important;
+                        text-align: justify !important;
+                      "
+                    >
+                      First-Time Broker/Officer Renewal:
+                    </li>
+                    <ul style="list-style-type: disc !important; padding-left: 60px !important">
+                      <li
+                        style="
+                          color: black !important;
+                          font-size: 17px !important;
+                          font-weight: normal !important;
+                          text-align: justify !important;
+                          display: list-item;
+                        "
+                      >
+                        Mandatory Core Courses (18 Hours):
+                      </li>
+                      <ul style="list-style-type: circle !important; padding-left: 60px !important">
+                        <li
+                          style="
+                            color: black !important;
+                            font-size: 17px !important;
+                            font-weight: normal !important;
+                            text-align: justify !important;
+                            display: list-item;
+                            padding-bottom: 20px !important;
+                          "
+                        >
+                          3 hours each in: Ethics, Agency, Trust Fund Handling, Risk Management, Management &amp;
+                          Supervision, and Fair Housing (Fair Housing must include interactive role- playing).
+                        </li>
+                      </ul>
+                      <li
+                        style="
+                          color: black !important;
+                          font-size: 17px !important;
+                          font-weight: normal !important;
+                          text-align: justify !important;
+                          display: list-item;
+                        "
+                      >
+                        Implicit Bias Training (2 Hours): A dedicated 2-hour course.
+                      </li>
+                      <li
+                        style="
+                          color: black !important;
+                          font-size: 17px !important;
+                          font-weight: normal !important;
+                          text-align: justify !important;
+                          display: list-item;
+                        "
+                      >
+                        Consumer Protection (Minimum 18 Hours): At least 18 hours of courses focused on protecting
+                        consumers.
+                      </li>
+                      <li
+                        style="
+                          color: black !important;
+                          font-size: 17px !important;
+                          font-weight: normal !important;
+                          text-align: justify !important;
+                          display: list-item;
+                          padding-bottom: 20px !important;
+                        "
+                      >
+                        Elective Courses (Up to 7 Hours): The remaining hours can be in either consumer protection or
+                        consumer service topics.
+                      </li>
+                    </ul>
+
+                    <li
+                      style="
+                        color: black !important;
+                        font-size: 17px !important;
+                        font-weight: normal !important;
+                        text-align: justify !important;
+                      "
+                    >
+                      Subsequent License Renewals (All Licensees):
+                    </li>
+                    <ul style="list-style-type: disc !important; padding-left: 60px !important">
+                      <li
+                        style="
+                          color: black !important;
+                          font-size: 17px !important;
+                          font-weight: normal !important;
+                          text-align: justify !important;
+                          display: list-item;
+                        "
+                      >
+                        Mandatory Core Courses (9 Hours):
+                      </li>
+                      <ul style="list-style-type: circle !important; padding-left: 60px !important">
+                        <li
+                          style="
+                            color: black !important;
+                            font-size: 17px !important;
+                            font-weight: normal !important;
+                            text-align: justify !important;
+                            display: list-item;
+                          "
+                        >
+                          Option 1: A single 9-hour CE survey course covering Ethics, Agency, Trust Fund Handling, Risk
+                          Management,Management &amp; Supervision, Fair Housing, and Implicit Bias Training.
+                        </li>
+                        <li
+                          style="
+                            color: black !important;
+                            font-size: 17px !important;
+                            font-weight: normal !important;
+                            text-align: justify !important;
+                            display: list-item;
+                            padding-bottom: 20px !important;
+                          "
+                        >
+                          Option 2: Individual courses totaling 9 hours, covering each of the mandatory subjects listed
+                          above.
+                        </li>
+                      </ul>
+                      <li
+                        style="
+                          color: black !important;
+                          font-size: 17px !important;
+                          font-weight: normal !important;
+                          text-align: justify !important;
+                          display: list-item;
+                        "
+                      >
+                        Consumer Protection (Minimum 18 Hours): At least 18 hours of courses focused on protecting
+                        consumers.
+                      </li>
+                      <li
+                        style="
+                          color: black !important;
+                          font-size: 17px !important;
+                          font-weight: normal !important;
+                          text-align: justify !important;
+                          display: list-item;
+                          padding-bottom: 20px !important;
+                        "
+                      >
+                        Elective Courses (Up to 18 Hours): The remaining hours can be in either consumer protection or
+                        consumer service topics.
+                      </li>
+                    </ul>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingRight2">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRight2"
+                  aria-expanded="false"
+                  aria-controls="collapseRight2"
+                >
+                  Can I renew my license before finishing CE?
+                </button>
+              </h2>
+              <div
+                id="collapseRight2"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingRight2"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  No. Complete all 45 hours first. You should start well in advance of your expiration date so there
+                  aren’t any delays and surprises.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingRight3">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRight3"
+                  aria-expanded="false"
+                  aria-controls="collapseRight3"
+                >
+                  What if I renew late?
+                </button>
+              </h2>
+              <div
+                id="collapseRight3"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingRight3"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  Avoid costly late fees by renewing your real estate license on time. Late renewals within two years of
+                  expiration will result in a $525 fee for salespeople and a $675 fee for brokers, significantly higher
+                  than the on-time rates. While you can renew within this two-year grace period without retaking the
+                  licensing exam, you are prohibited from practicing real estate during this time. If you fail to renew
+                  within two years, your license will expire permanently, and you will be required to retake the real
+                  estate licensing exam and requalify. To avoid these penalties and ensure uninterrupted practice, we
+                  strongly recommend renewing your license on time.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingRight4">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRight4"
+                  aria-expanded="false"
+                  aria-controls="collapseRight4"
+                >
+                  How do I renew if DRE’s site is down on my expiration date?
+                </button>
+              </h2>
+              <div
+                id="collapseRight4"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingRight4"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  This is super rare, but you might want to just mail it in and get proof of mailing so that it is
+                  postmarked on time. Please don’t wait until the date of expiration to do this - save the stress!
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingRight5">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRight5"
+                  aria-expanded="false"
+                  aria-controls="collapseRight5"
+                >
+                  Can I transfer CE hours to my next renewal?
+                </button>
+              </h2>
+              <div
+                id="collapseRight5"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingRight5"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  No. CE hours must be completed within your current license term or grace period.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingRight6">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRight6"
+                  aria-expanded="false"
+                  aria-controls="collapseRight6"
+                >
+                  How do I get help?
+                </button>
+              </h2>
+              <div
+                id="collapseRight6"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingRight6"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  The fastest way to get service is to start a chat during business hours at the bottom right of the
+                  website.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingRight7">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRight7"
+                  aria-expanded="false"
+                  aria-controls="collapseRight7"
+                >
+                  How long are my records stored?
+                </button>
+              </h2>
+              <div
+                id="collapseRight7"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingRight7"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">Indefinitely. Access your certificate anytime, even years later.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingRight8">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRight8"
+                  aria-expanded="false"
+                  aria-controls="collapseRight8"
+                >
+                  How long do I have to finish my courses?
+                </button>
+              </h2>
+              <div
+                id="collapseRight8"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingRight8"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">Complete all finals within 1 year of purchase, per DRE rules.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingRight9">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRight9"
+                  aria-expanded="false"
+                  aria-controls="collapseRight9"
+                >
+                  Are there CE exemptions?
+                </button>
+              </h2>
+              <div
+                id="collapseRight9"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingRight9"
+                data-bs-parent="#mainAccordion"
+              >
+                <div class="accordion-body">
+                  Yes. Licensees over 70 with 30+ years in good standing may qualify. Learn more about this
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5.2.3 Bundle (Includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
